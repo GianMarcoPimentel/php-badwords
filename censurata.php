@@ -15,17 +15,25 @@
 <body>
     <h1>Paragrafo e Censura</h1>
     <p>
-        Il paragrafo Inserito è : <br>
+        Il paragrafo Inserito è : 
         <?php
-        echo $paragrafo
+        echo $paragrafo ;
+        
+       
         
         ?>
     </p>
-
-    <!-- <p>
-        La parola da censurare è : <br>
+    <p>
+        La lunghezza del paragrafo è : 
         <?php
-        echo $parola_censurata
+        
+        $lunghezza_paragrafo = strlen($paragrafo);
+        echo $lunghezza_paragrafo ;
+
+      /*   var_dump($paragrafo); */
+        
         ?>
-    </p> -->
-</html>
+       
+    </p>
+
+    

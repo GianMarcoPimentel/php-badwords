@@ -31,11 +31,11 @@ scrivete tutto con echo e in maniera ordinata e piacevole per l'utente
 <body>
     <div class="container">
 
-    <h1> PHP-BADWORDS </h1>
+    <h1 class="title"> PHP-BADWORDS </h1>
     <form action="censurata.php">
         <label for="paragrafo">Paragrafo:</label>
         <br>
-        <textarea name="paragrafo" id="paragrafo" rows="5" cols="50"></textarea>
+        <textarea name="paragrafo" id="paragrafo" rows="5" cols="40"></textarea>
         <br>
         <label for="parola_censurata">Parola da censurare:</label>
         <br>
@@ -44,17 +44,6 @@ scrivete tutto con echo e in maniera ordinata e piacevole per l'utente
         <input type="submit" value="Invia">
     </form>
 
-   <!-- <form action="result.php">
-    <label for="">Inserisci una parola</label>
-    <input type="text">
-    <input type="submit">
-   </form> -->
-   <!-- <?php 
-   $name = 'GianMarco';
-   $eta = 27;
-
-   echo " ciao sono " + $name + " e ho $eta anni." ;
-   ?> -->
     </div>
 </body>
 </html>
