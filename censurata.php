@@ -2,6 +2,7 @@
     $paragrafo = $_GET['paragrafo'];
 
     $parola_censurata = $_GET['parola_censurata'];
+    
 ?>
 
 </body>
@@ -35,5 +36,25 @@
         ?>
        
     </p>
+    <p>
+        Il paragrafo censurato è : 
+        <?php
+    // Censura la parola
+         $paragrafo_censurato = str_replace($parola_censurata, "***", $paragrafo);
 
+         echo $paragrafo_censurato;
+        
+        ?>
+    </p>
+
+    <p>
+        <?php
+        
+        
     
+        $lunghezza_paragrafo_censurato = strlen($paragrafo_censurato);
+
+        echo $lunghezza_paragrafo_censurato;
+        ?>
+
+    </p>
