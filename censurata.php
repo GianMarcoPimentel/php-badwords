@@ -18,6 +18,7 @@
     <p>
         Il paragrafo Inserito è : 
         <?php
+        //stamnpo a schermo il paragrafo
         echo $paragrafo ;
         
        
@@ -26,8 +27,9 @@
     </p>
     <p>
         La lunghezza del paragrafo è : 
+
         <?php
-        
+        // salvo al variabile della lugnhezza e la calcolo con la funzione strlen(),
         $lunghezza_paragrafo = strlen($paragrafo);
         echo $lunghezza_paragrafo ;
 
@@ -39,7 +41,7 @@
     <p>
         Il paragrafo censurato è : 
         <?php
-    // Censura la parola
+            // Censura la parola
          $paragrafo_censurato = str_replace($parola_censurata, "***", $paragrafo);
 
          echo $paragrafo_censurato;
@@ -49,9 +51,8 @@
 
     <p>
         <?php
-        
-        
-    
+        // lunghezza farse con censura
+        // salvo al variabile della lugnhezza e la calcolo con la funzione strlen(),
         $lunghezza_paragrafo_censurato = strlen($paragrafo_censurato);
 
         echo $lunghezza_paragrafo_censurato;
